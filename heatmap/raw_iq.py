@@ -11,7 +11,9 @@ from PIL import Image
 
 def help():
     print("raw_iq.py bins averages sample-type input.raw")
-    print("  sample_types: u1 (uint8), s1 (int8), s2 (int16)")
+    print("  bins: integer, if increasing, increase frequency resolution but decrease time resolution")
+    print("  averages: integer, if increasing, increase bins averaging but reduce duration")
+    print("  sample_types: default (numpy.load), u1 (uint8), s1 (int8), s2 (int16)")
     sys.exit()
 
 def byte_reader(path, sample):
