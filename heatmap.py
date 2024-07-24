@@ -472,7 +472,7 @@ def word_aa(label, pt, fg_color, bg_color):
     w_img = Image.new("RGB", s, bg_color)
     w_draw = ImageDraw.Draw(w_img)
     w_draw.text((0, 0), label, font=f, fill=fg_color)
-    return w_img.resize((s[0]//3, s[1]//3), Image.ANTIALIAS)
+    return w_img.resize((s[0]//3, s[1]//3), Image.LANCZOS)
 
 def blend(percent, c1, c2):
     "c1 and c2 are RGB tuples"
