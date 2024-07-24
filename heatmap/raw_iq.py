@@ -89,7 +89,10 @@ if __name__ == '__main__':
     except:
         help()
     print("loading data")
-    data = byte_reader(path, sample)
+    if sample in ["u1", "s1", "s2"]:
+        data = byte_reader(path, sample)
+    elif sample == "default":
+        data = numpy.load(path)
     print("estimated size: %i x %i" % (bin_count,
         int(len(data) / (bin_count*averages))))
     print("crunching fft")
