@@ -4,13 +4,17 @@ Plot a spectrum from a CSV file using the format of =rtl_power= from [[https://g
 
 * Motivation
 
-This is a fork of [[https://github.com/keenerd/rtl-sdr-misc/blob/master/heatmap/heatmap.py][Kyle "Keenerd" Keen]] repository, only keeping the =heatmap=
-directory. His version is unmaintained since several years, yet this utility is
-still useful for spectrum offline plotting. In this fork, I only maintain
-compatibility with newer versions of Python and dependent libraries.
+This is a fork of [[https://github.com/keenerd/rtl-sdr-misc/blob/master/heatmap/heatmap.py][Kyle "Keenerd" Keen]] repository, only keeping files under the
+original =heatmap= directory. His version is unmaintained since several years,
+yet this utility is still useful for spectrum offline plotting. In this fork, I
+only maintain compatibility with newer versions of Python and dependent
+libraries.
 
 * Utilities
 
-- =flatten.py= :: TODO
-- =heatmap.py= :: TODO
-- =raw_iq.py= :: TODO
+- [[file:flatten.py][=flatten.py=]] :: Summarize a =rtl_power= CSV by printing to the standard
+  output the magnitude of each frequency band over the whole sweeping time.
+- [[file:heatmap.py][=heatmap.py=]] :: Plot a =rtl_power= CSV into an image representing the
+  spectrum.
+- [[file:raw_iq.py][=raw_iq.py=]] :: Plot raw I/Q data (/e.g./, =numpy.complex64=) into the same
+  image format and style that =heatmap.py=.
