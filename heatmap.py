@@ -467,8 +467,9 @@ def closest_index(n, m_list, interpolate=False):
 
 def word_aa(label, pt, fg_color, bg_color):
     f = ImageFont.truetype(vera_path, pt*3)
-    s = f.getsize(label)
-    s = (s[0], pt*3 + 3)  # getsize lies, manually compute
+    b = f.getbbox(label) # Returns (left, top, right, bottom)
+    b_width = abs(b[0] - b[2])
+    s = (b_width, pt*3 + 3) # getbbox lies, manually compute
     w_img = Image.new("RGB", s, bg_color)
     w_draw = ImageDraw.Draw(w_img)
     w_draw.text((0, 0), label, font=f, fill=fg_color)
