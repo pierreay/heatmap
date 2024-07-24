@@ -22,7 +22,7 @@ except:
 # gain normalization
 # check pil version for brokenness
 
-vera_url = "https://github.com/keenerd/rtl-sdr-misc/raw/master/heatmap/Vera.ttf"
+vera_url = "https://github.com/pierreay/heatmap/raw/master/Vera.ttf"
 vera_path = os.path.join(sys.path[0], "Vera.ttf")
 
 tape_height = 25
