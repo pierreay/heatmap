@@ -1,0 +1,16 @@
+* About
+
+Plot a spectrum from a CSV file using the format of =rtl_power= from [[https://gitea.osmocom.org/sdr/rtl-sdr.git][RTL-SDR]].
+
+* Motivation
+
+This is a fork of [[https://github.com/keenerd/rtl-sdr-misc/blob/master/heatmap/heatmap.py][Kyle "Keenerd" Keen]] repository, only keeping the =heatmap=
+directory. His version is unmaintained since several years, yet this utility is
+still useful for spectrum offline plotting. In this fork, I only maintain
+compatibility with newer versions of Python and dependent libraries.
+
+* Utilities
+
+- =flatten.py= :: TODO
+- =heatmap.py= :: TODO
+- =raw_iq.py= :: TODO
