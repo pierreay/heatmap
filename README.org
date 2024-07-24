@@ -10,6 +10,16 @@ yet this utility is still useful for spectrum offline plotting. In this fork, I
 only maintain compatibility with newer versions of Python and dependent
 libraries.
 
+* Installation
+
+In the current directory, simply =wget= the needed utility and launch it with
+=python=. For example:
+
+#+begin_src bash :eval never
+wget https://raw.githubusercontent.com/pierreay/heatmap/master/heatmap.py
+python heatmap.py
+#+end_src
+
 * Utilities
 
 - [[file:flatten.py][flatten.py]] :: Summarize a =rtl_power= CSV by printing to the standard
