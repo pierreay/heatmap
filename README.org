@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       b0809c63-59b2-4ae2-af06-e028a1964a6b
+:END:
 * About
 
 Plot a spectrum from a CSV file using the format of =rtl_power= from [[https://gitea.osmocom.org/sdr/rtl-sdr.git][RTL-SDR]].
