@@ -12,9 +12,9 @@ libraries.
 
 * Utilities
 
-- [[file:flatten.py][=flatten.py=]] :: Summarize a =rtl_power= CSV by printing to the standard
+- [[file:flatten.py][flatten.py]] :: Summarize a =rtl_power= CSV by printing to the standard
   output the magnitude of each frequency band over the whole sweeping time.
-- [[file:heatmap.py][=heatmap.py=]] :: Plot a =rtl_power= CSV into an image representing the
+- [[file:heatmap.py][heatmap.py]] :: Plot a =rtl_power= CSV into an image representing the
   spectrum.
-- [[file:raw_iq.py][=raw_iq.py=]] :: Plot raw I/Q data (/e.g./, =numpy.complex64=) into the same
+- [[file:raw_iq.py][raw_iq.py]] :: Plot raw I/Q data (/e.g./, =numpy.complex64=) into the same
   image format and style that =heatmap.py=.
