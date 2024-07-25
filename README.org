@@ -5,6 +5,9 @@
 
 Plot a spectrum from a CSV file using the format of =rtl_power= from [[https://gitea.osmocom.org/sdr/rtl-sdr.git][RTL-SDR]].
 
+#+CAPTION: Example of 24 hours spectrum survey (by Tholin @ RTL-SDR)
+[[file:tholin_rtlsdr.png]]
+
 * Motivation
 
 This is a fork of [[https://github.com/keenerd/rtl-sdr-misc/blob/master/heatmap/heatmap.py][Kyle "Keenerd" Keen]] repository, only keeping files under the
@@ -31,3 +34,7 @@ python heatmap.py
   spectrum.
 - [[file:raw_iq.py][raw_iq.py]] :: Plot raw I/Q data (/e.g./, =numpy.complex64=) into the same
   image format and style that =heatmap.py=.
+
+* References
+
+- Illustration by [[https://www.rtl-sdr.com/rtl_power-instructions/tholin_rtlsdr/][Tholin @ RTL-SDR]]
