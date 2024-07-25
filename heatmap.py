@@ -365,7 +365,7 @@ def rgb_fn(palette, min_z, max_z):
             return len(palette) - 1
         # Compute tone value [0 ; 1].
         tone = (z - min_z) / (max_z - min_z)
-        assert tone > 0 and tone <= 1
+        assert tone >= 0 and tone <= 1
         # Scale the tone value to the index of the color palette.
         tone_scaled = int(tone * (len(palette) - 1))
         assert tone_scaled < len(palette)
