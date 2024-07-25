@@ -355,8 +355,20 @@ def twente_palette():
 def rgb_fn(palette, min_z, max_z):
     "palette is a list of tuples, returns a function of z"
     def rgb_inner(z):
+        """Return the value of the color palette corresponding to the given tone.
+
+        :param z: Power [< 0 dB]
+
+        """
+        # Special case for 0, since 0 is positive and {min,max}_z are negative.
+        if z == 0:
+            return len(palette) - 1
+        # Compute tone value [0 ; 1].
         tone = (z - min_z) / (max_z - min_z)
-        tone_scaled = int(tone * (len(palette)-1))
+        assert tone > 0 and tone <= 1
+        # Scale the tone value to the index of the color palette.
+        tone_scaled = int(tone * (len(palette) - 1))
+        assert tone_scale < len(palette)
         return palette[tone_scaled]
     return rgb_inner
 
